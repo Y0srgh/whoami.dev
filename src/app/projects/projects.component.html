@@ -1,0 +1,16 @@
+<div class="projects">
+    <h1>My Projects</h1>
+    <p class="intro">A few selected works showcasing my skills and passion for building impactful software.</p>
+  
+    <div class="project-grid">
+      <div class="project-card" *ngFor="let project of projects">
+        <h2>{{ project.title }}</h2>
+        <p class="description">{{ project.description }}</p>
+        <ul class="tech-list">
+          <li *ngFor="let tech of project.tech">{{ tech }}</li>
+        </ul>
+        <a class="visit" [href]="project.link" target="_blank" rel="noopener noreferrer">View Project →</a>
+      </div>
+    </div>
+  </div>
+  

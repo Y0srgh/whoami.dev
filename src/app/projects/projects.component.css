@@ -1,0 +1,77 @@
+.projects {
+    padding: 3rem 2rem;
+    color: white;
+    text-align: center;
+  
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .intro {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2.5rem auto;
+    }
+  
+    .project-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      padding: 1rem;
+  
+      .project-card {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        padding: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
+        &:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+  
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+  
+        .description {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+  
+        .tech-list {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0.5rem;
+          margin-bottom: 1rem;
+  
+          li {
+            background-color: #ff4081;
+            padding: 0.3rem 0.7rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+          }
+        }
+  
+        .visit {
+          display: inline-block;
+          margin-top: 1rem;
+          color: #ff4081;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.2s ease;
+  
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  

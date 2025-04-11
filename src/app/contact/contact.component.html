@@ -1,0 +1,35 @@
+<div class="contact">
+    <h1>Contact Me</h1>
+    <p class="intro">Got a question, idea, or collaboration in mind? Drop me a message!</p>
+  
+    <form (ngSubmit)="sendMessage()" #form="ngForm" class="contact-form">
+      <input
+        type="text"
+        name="name"
+        [(ngModel)]="contact.name"
+        placeholder="Your Name"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="contact.email"
+        placeholder="Your Email"
+        required
+      />
+      <textarea
+        name="message"
+        [(ngModel)]="contact.message"
+        rows="6"
+        placeholder="Your Message"
+        required
+      ></textarea>
+  
+      <button type="submit" [disabled]="form.invalid">Send Message</button>
+  
+      <div class="success" *ngIf="submitted">
+        ✅ Your message has been sent!
+      </div>
+    </form>
+  </div>
+  

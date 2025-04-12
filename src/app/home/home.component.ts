@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
         { name: 'Docker', icon: 'fab fa-docker' },
         { name: 'Terraform', icon: 'fas fa-cloud-upload-alt' }
       ]
-    },
+    }, 
     {
       name: 'DevOps & Automation',
       items: [

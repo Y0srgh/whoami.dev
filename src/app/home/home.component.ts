@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
         speed: 2
       }
     }
-  };
+  }; 
 
   techStack = [
     {

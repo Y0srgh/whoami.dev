@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["npm", "run", "serve:ssr:frontend"]
+CMD ["npm", "run", "serve:ssr:portfolio"]
